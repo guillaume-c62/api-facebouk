@@ -1,0 +1,110 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap'); */
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: 'Almendra SC', serif; */
+} 
+
+.logo{
+    color: blue;
+    font-size: 60px;
+    margin-top: 280px;
+   
+    border-bottom: 1px solid blue; 
+}
+
+.containerBt{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.bt{
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color:blue;
+    /* background-color: greenyellow; */
+    border: 1px solid blue;
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.bt:hover{
+   
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+}
+.bt::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(4, 86, 238, 0.8), transparent);
+    transform: skewX(25deg);
+    transition: 0s;
+}
+.bt:hover:before
+{
+  left: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.bti{
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 31px;
+    text-decoration: none;
+    color:blue;
+    /* background-color: greenyellow; */
+    border: 1px solid blue;
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+.bti:hover{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius:0px ;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.bti::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(4, 86, 238, 0.8), transparent);
+    transform: skewX(-25deg);
+    transition: 0s;
+}
+.bti:hover:before
+{
+  right: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}

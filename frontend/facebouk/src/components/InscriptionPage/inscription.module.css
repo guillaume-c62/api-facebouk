@@ -1,0 +1,192 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  
+} 
+
+.form{
+    border: 1px solid black;
+    height: 400px;
+    width: 600px;
+    padding: 10px 30px 10px 10px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 0.2s;
+    background-image: url(../../img/goat-309833_640.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: rgba(226, 222, 222, 0.644);
+}
+.form:hover{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.titre{
+    color: black;
+    font-size: 30px;
+    font-family:  Roboto, sans-serif;
+    margin-bottom: 20px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 30px 10px; 
+}
+.inputInscription{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    margin-bottom: 15px;
+    width: 240px;
+}
+.inputInscription:invalid{
+    border: none;
+    border-bottom: 2px solid red;
+    box-shadow: 0px 5px 5px transparent;
+}
+.inputInscription:active{
+    border: none;
+    border-bottom: 1px solid blue;
+}
+.inputInscription:focus{
+    border: none;
+}
+.inputInscription::placeholder{
+    color: black;
+    text-shadow: black;
+    text-align: center;
+    font-style: italic;
+    font-family:  Roboto, sans-serif;
+    
+}
+.btn{
+    margin: 30px 5px 10px;
+    text-align: center;
+}
+.log ,.dead{
+    border-style: none;
+    text-transform:unset;
+    font-size: 16px;
+    font-family:  Roboto, sans-serif;
+    margin: 10px;
+}
+.log{
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    background-color:  rgb(8, 199, 8);
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.log:hover{
+   
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+}
+.log::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(253, 253, 253, 0.8), transparent);
+    transform: skewX(25deg);
+    transition: 0s;
+
+ 
+}
+.log:hover:before
+{
+  left: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+
+.dead{
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.dead:hover{
+   
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+}
+.dead::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(253, 253, 253, 0.8), transparent);
+    transform: skewX(25deg);
+    transition: 0s;
+
+ 
+}
+.dead:hover:before
+{
+  left: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}

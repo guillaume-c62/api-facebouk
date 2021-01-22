@@ -1,0 +1,77 @@
+.container{
+    /* background-image: url(../../img/plop.png); */
+    background-color: #ffffff;
+    background-size: 100vw 100vh;
+    height: 100vh; 
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+} 
+.p{
+    font-size: 20px;
+    color: blue;
+}
+.navs{
+    margin-top: -20px;
+    background-color: blue;
+    height: 70px;
+    text-align: right;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-top: 23px;
+    margin-right: 20px;
+
+}
+.btnl{
+    /* margin: 0 10px; */
+    position: relative;
+    display: inline-block;
+    /* padding: 6px 31px; */
+    text-decoration: none;
+    color:black;
+    /* background-color: greenyellow; */
+    /* border: 1px solid black; */
+    border-style: none;
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+   
+}
+.image{
+    border-radius: 20px;
+    padding: 30px;
+    opacity: 0.33;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    margin-top : 20px;
+    background-image: url(../../img/billy-goat-42194_640.png);
+    height: 500px;
+    width: 400px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btnl::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(0, 0, 0, 0.8), transparent);
+    transform: skewX(-25deg);
+    transition: 0s;
+}
+.btnl:hover:before
+{
+  right: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}

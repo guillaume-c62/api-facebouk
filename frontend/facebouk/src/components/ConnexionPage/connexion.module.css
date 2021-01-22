@@ -1,0 +1,111 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    
+} 
+
+.img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    margin-right: 220px;
+}
+
+.inputConnexion{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 10px auto;
+    border: none;
+    text-align: center;
+    width: 50%;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.inputConnexion:active{
+    border: none;
+}
+.inputConnexion:focus{
+    border: none;
+}
+.inputConnexion::placeholder{
+    color: black;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.titre{
+    display: block;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 10px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+   margin-top: 30px;
+    
+
+}
+.co{
+    color: white;
+    background-color: rgb(8, 199, 8);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border-style: none;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    width: 45%;
+    margin: 5px auto;
+    padding: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    transition: 0.2s;
+}
+input:active{
+    border: none;
+}
+input:focus{
+    border: none;
+}
+.co:hover{
+    color: white;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.deada{
+    background-color: rgb(197, 42, 42);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border-style: none;
+    color: white;
+    width: 45%;
+    margin: 5px auto;
+    padding: 5px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: 0.2s;
+}
+.deada:hover{
+   color: white;
+   border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.form{
+    width: 346px;
+    height: 268px;
+    background-color: rgba(226, 222, 222, 0.644);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+body{
+    /* background-image: url(../../img/plop.jpg); */
+}
