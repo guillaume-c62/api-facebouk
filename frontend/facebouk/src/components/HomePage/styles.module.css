@@ -7,6 +7,7 @@
     justify-content:space-around;
     align-items: center; 
 } 
+
 .p{
     font-size: 20px;
     color: blue;
@@ -47,8 +48,8 @@
     padding: 30px;
     opacity: 0.33;
     position: absolute;
-    left: 35%;
-    right: 35%;
+    left: 40%;
+    right: 40%;
     margin-top : 20px;
     background-image: url(../../img/billy-goat-42194_640.png);
     height: 500px;

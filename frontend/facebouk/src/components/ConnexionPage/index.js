@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import styles from './connexion.module.css';
 import fetchco from "./connexion"
 import fetchannul from '../Annuler/annuler';
@@ -10,7 +9,7 @@ const Connexion = () => {
     return(
         
         <div className={styles.container}>
-                    <img className={styles.img} src={img}></img> 
+                    <img alt="logobouc" className={styles.img} src={img}></img> 
             <div className={styles.f}> 
                 <form className={styles.form} >
                     <label className={styles.titre}>Connexion</label>

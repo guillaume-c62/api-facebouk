@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import styles from "./profil.module.css";
 import Header from '../Header';
 import fetchprof from "./profile";

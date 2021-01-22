@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 import Header from '../Header';
 import fetchhom from './homePage';
@@ -14,7 +13,7 @@ const HomePage = () => {
                  <div className={styles.navs}>
                      <div className={styles.btn}>
                          <label for="site-search"></label>
-                            <input type="search"></input>
+                            <input name="site-search" type="search"></input>
                                 <button className={styles.btnl} >chercher</button>
                     </div>
                         </div>

@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import styles from './inscription.module.css';
 import fetchinsc from './inscription';
 import fetchannul from '../Annuler/annuler'
@@ -17,7 +16,7 @@ useEffect(()=>{fetchinsc(); fetchannul();})
                         <input className={styles.inputInscription} minlength="3" id="username" type="text"  method="post" for="" placeholder="Identifiant ..."></input>
                         <input className={styles.inputInscription} id="email" type="email" method="post" for="email" placeholder="Adresse mail ..."></input>
                         <input className={styles.inputInscription} minlength="6" id="password" type="password" method="post" for="password" placeholder="Mot de passe ..."></input>
-                        <input className={styles.inputInscription} minlength="6" type="password" method="post" for="password" placeholder="Confirmez le mot de passe ..."></input>  
+                        <input className={styles.inputInscription} id="confirmpassword" minlength="6" type="password" method="post" for="password" placeholder="Confirmez le mot de passe ..."></input>  
                     </div>            
                 </form>
                 <div className={styles.btn}> 

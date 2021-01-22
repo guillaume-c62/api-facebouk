@@ -33,7 +33,6 @@ const fetchco = () => { //instancier le js en react
                     } else if (json === undefined) {
                         console.log('pb')
                     } else {
-                        const token = json.accessToken;
                         sessionStorage.setItem("Token", json.accessToken)
                         document.location.href = "/HomePage"
                     }
